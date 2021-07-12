@@ -1,0 +1,161 @@
+.buyproduct {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.buyproduct_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+}
+
+.buyproduct_img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+}
+
+.buyproduct_info {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.buyproduct_infoSide > h5 {
+  font-size: 14px;
+  font-weight: 500;
+  width: 400px;
+  line-height: 22px;
+  letter-spacing: 1.1px;
+  margin-bottom: 10px;
+}
+
+.buyproduct_infoSide > h5 > small {
+  font-size: 15px;
+}
+
+.buyproduct_infoSide > h5 > strong {
+  font-size: 15px;
+}
+
+.buyproduct_rating {
+  display: flex;
+}
+
+.buyproduct_address {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.buyproduct_addressDetails > h2 {
+  color: #333333;
+  font-size: 20px;
+  letter-spacing: 1.1px;
+  margin-bottom: 10px;
+}
+
+.buyproduct_addressDetails > h3 {
+  font-size: 17px;
+  color: #333333;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.buyproduct_addressDetails > h6 {
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0.8px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.buyproduct_addressDetailsButton {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 30px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+}
+
+.modal_infoImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_infoImg > img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.modal_info > h3 {
+  color: #333333;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.modal_h5 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-left: 40px;
+}
+
+.modal_h5 > h5 {
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 770px) {
+  .buyproduct {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .buyproduct_section {
+    width: 100%;
+  }
+
+  .buyproduct_info {
+    padding-left: 40px;
+  }
+
+  .buyproduct_infoSide {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .buyproduct_infoSide > h5 {
+    width: 200px;
+  }
+
+  .buyproduct_address {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .modal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

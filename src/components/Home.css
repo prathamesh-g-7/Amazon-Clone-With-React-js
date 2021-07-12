@@ -1,4 +1,5 @@
 .home {
+  width: 100%;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
@@ -16,4 +17,31 @@
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: -1;
   margin-bottom: -150px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 770px) {
+  .home {
+    width: 84vw;
+    max-width: 400px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .home_row {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .home_image {
+    width: 100vw;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: -1;
+    margin-bottom: -30px;
+    margin-top: 49px;
+  }
 }

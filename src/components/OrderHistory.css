@@ -1,0 +1,157 @@
+.orderhistory {
+  width: 100%;
+}
+
+.orderhistory_mainDiv {
+  width: 65vw;
+  height: 60vh;
+  border: 1px solid rgb(187, 184, 184);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orderhistory_mainDivHead {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  border-bottom: 1px solid rgb(187, 184, 184);
+}
+
+.orderhistory_mainDivHead > section {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.orderhistory_mainDivHead > div {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.orderhistory_mainDivHead > div > h5 {
+  text-transform: uppercase;
+  color: #333333;
+  letter-spacing: 0.4px;
+  font-size: 13px;
+}
+
+.orderhistory_mainDivHead > div > p {
+  color: #333333;
+  letter-spacing: 0.4px;
+  font-size: 13px;
+}
+
+.orderhistory_mainDivHead > section > h5 {
+  text-transform: uppercase;
+  color: #333333;
+  letter-spacing: 0.4px;
+  font-size: 13px;
+}
+.orderhistory_mainDivHead > section > p {
+  color: #333333;
+  letter-spacing: 0.4px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.orderhistory_mainDivTail {
+  width: 100%;
+  height: 85%;
+  background: #ffffff;
+  overflow-y: scroll;
+}
+
+.displayflex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.displayflex > img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: flex;
+}
+
+.price {
+  flex: 1;
+}
+
+.price > h3 {
+  display: flex;
+  font-size: 12px;
+  margin-left: 20px;
+  color: #333333;
+  font-weight: 500;
+  width: 70%;
+}
+.price > h2 {
+  display: flex;
+  font-size: 12px;
+  margin-left: 20px;
+  color: #2471b9;
+  font-weight: 500;
+  width: 70%;
+}
+
+.orderhistory_mainDivTail_orders > hr {
+  opacity: 0.5;
+}
+
+.displayflex_btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.displayflex_btn > button {
+  width: 200px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e8ee;
+  border: 1px solid #b0b1b3;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* media queries */
+
+@media screen and (max-width: 770px) {
+  .orderhistory_mainDivHead {
+    width: 100%;
+    height: 20%;
+    overflow-x: scroll;
+  }
+  .displayflex {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .orderhistory_mainDiv {
+    width: 70vw;
+    height: 65vh;
+  }
+
+  .displayflex > img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price {
+    margin-left: 60px;
+  }
+
+  .displayflex_btn {
+    margin-left: 60px;
+  }
+}

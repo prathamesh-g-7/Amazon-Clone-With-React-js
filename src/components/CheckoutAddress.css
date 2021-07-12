@@ -1,0 +1,118 @@
+.checkoutddress {
+  width: 100%;
+  height: 75vh;
+}
+
+.checkoutddress > h2 {
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+.checkoutddress > hr {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+.checkoutddress_formContent {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.checkoutddress_formContent > label {
+  margin-bottom: 4px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+.checkoutddress_formContent > input {
+  width: 50%;
+  outline: none;
+  padding: 5px;
+}
+
+.checkoutddress_formContent > input:hover {
+  border: 2px solid #a88734;
+}
+
+.checkoutddress_formContent > select {
+  padding: 5px;
+  width: 50%;
+}
+
+.checkoutddress_formContent > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 15px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.checkoutddress_selectAddress {
+  width: 100%;
+}
+
+.checkoutddress_selectAddress > h2 {
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+.checkoutddress_selectAddress > h5 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-bottom: 35px;
+}
+
+.checkoutddress_selectAddress > hr {
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.checkoutddress_selectAddressDiv {
+  width: 50%;
+}
+
+.checkoutddress_selectAddressDiv > h3 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+}
+.checkoutddress_selectAddressDiv > h6 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.checkoutddress_selectAddressDiv > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 15px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+  margin-bottom: 35px;
+  width: 50%;
+}
+
+/* media queries */
+
+@media screen and (max-width: 770px) {
+  .checkoutddress_selectAddressDiv {
+    width: 100%;
+  }
+}

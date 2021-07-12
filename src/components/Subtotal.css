@@ -8,6 +8,8 @@
   background-color: #f3f3f3;
   border: 1px solid #dddddd;
   border-radius: 3px;
+  position: sticky;
+  top: 90px;
 }
 
 .subtotal_gift {
@@ -28,4 +30,28 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+  cursor: pointer;
+}
+
+.modal_buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+.modal_button {
+  background: tomato;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* media quesries */
+
+@media screen and (max-width: 770px) {
+  .subtotal {
+    position: relative;
+    top: 20px;
+  }
 }
