@@ -75,23 +75,30 @@ function CheckoutAddress() {
         </h5>
         <hr />
         <div className="checkoutddress_selectAddressDiv">
-          {add.map((eachAdd) =>
-            eachAdd.userid === user?.uid ? (
-              <>
-                <h3>{eachAdd?.name}</h3>
-                <h6>{eachAdd?.location}</h6>
-                <h6>{eachAdd?.area}</h6>
-                <h6>
-                  {eachAdd?.city} {eachAdd?.state} {eachAdd?.pin}
-                </h6>
-                <h6>{eachAdd?.country}</h6>
-                <button onClick={() => buyProduct(eachAdd?.id)}>
-                  Delever to This Address
-                </button>
-              </>
-            ) : (
-              ""
+          {add ? (
+            add.map((eachAdd) =>
+              eachAdd.userid === user?.uid ? (
+                <>
+                  <h3>{eachAdd?.name}</h3>
+                  <h6>{eachAdd?.location}</h6>
+                  <h6>{eachAdd?.area}</h6>
+                  <h6>
+                    {eachAdd?.city} {eachAdd?.state} {eachAdd?.pin}
+                  </h6>
+                  <h6>{eachAdd?.country}</h6>
+                  <button onClick={() => buyProduct(eachAdd?.id)}>
+                    Delever to This Address
+                  </button>
+                </>
+              ) : (
+                ""
+              )
             )
+          ) : (
+            <h3>
+              You don't set any address to your account, please Add atleast one
+              Address
+            </h3>
           )}
         </div>
       </div>

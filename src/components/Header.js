@@ -13,12 +13,12 @@ function Header() {
   const [{ basket, user }, dispatch] = useStateContextValue();
   const history = useHistory();
 
-  const [city, setCity] = useState([]);
+  const [city, setCity] = useState("");
 
   db.collection("address").onSnapshot((snap) =>
     setCity(
       snap.docs.map((doc) =>
-        doc.data().userId === user?.uid ? doc.data().city : ""
+        doc.data().userId === user?.uid ? doc.data().city : null
       )
     )
   );
@@ -91,9 +91,7 @@ function Header() {
           <Link to="/" className="header_link">
             <div className="header_option">
               <span className="heaader_optionLineOne">Deliver Order To</span>
-              <span className="heaader_optionLineTwo">
-                {city ? city : "Your Doorestep"}
-              </span>
+              <span className="heaader_optionLineTwo">Your Doorestep</span>
             </div>
           </Link>
         </div>
@@ -126,7 +124,7 @@ function Header() {
               <span className="heaader_optionLineTwo">& Orders</span>
             </div>
           </Link>
-          <Link to="/" className="header_link">
+          <Link to="/listandaccount" className="header_link">
             <div className="header_option">
               <span className="heaader_optionLineOne">Lists</span>
               <span className="heaader_optionLineTwo">& Account</span>
@@ -134,7 +132,7 @@ function Header() {
           </Link>
 
           {/* 3rd link */}
-          <Link to="/" className="header_link">
+          <Link to="/yourprime" className="header_link">
             <div className="header_option">
               <span className="heaader_optionLineOne">Your</span>
               <span className="heaader_optionLineTwo">Prime</span>

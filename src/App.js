@@ -15,6 +15,9 @@ import OrderHistory from "./components/OrderHistory";
 import Buyagain from "./components/Buyagain";
 import Cancleorder from "./components/Cancleorder";
 import db from "./Firebase/Firebase";
+import ListAndAccount from "./components/ListAndAccount";
+import YourPrime from "./components/YourPrime";
+import Signup from "./components/Signup";
 
 function App() {
   const [{ user }, dipatch] = useStateContextValue();
@@ -63,6 +66,9 @@ function App() {
           <Route exact path="/login">
             <Login />
           </Route>
+          <Route exact path="/signup">
+            <Signup />
+          </Route>
 
           <Route exact path="/">
             <Header />
@@ -92,6 +98,14 @@ function App() {
           <Route exact path="/cancledorder">
             <Header />
             <Cancleorder />
+          </Route>
+          <Route exact path="/listandaccount">
+            <Header />
+            <ListAndAccount />
+          </Route>
+          <Route exact path="/yourprime">
+            <Header />
+            <YourPrime />
           </Route>
         </Switch>
         <Footer />

@@ -1,57 +1,24 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
 import "./Login.css";
+import { Link, useHistory } from "react-router-dom";
 import { auth, provider } from "../Firebase/Firebase";
 import { useStateContextValue } from "../context/StateProvider";
 
-function Login() {
-  //
-  //
-  const [{ user }, dipatch] = useStateContextValue();
-
-  const history = useHistory();
-
+function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const login = (e) => {
+  const history = useHistory();
+
+  const signupWithEmail = (e) => {
     e.preventDefault(); //this stop refresh
-
     auth
-      // .signInWithEmailAndPassword(email, password)
-      .signInWithPopup(provider)
-      .then((result) => {
-        //logged in redirect to home page
-        let userr = result.user;
-        console.log("userr >>>>>", userr);
-
-        dipatch({
-          type: "SET_USER",
-          user: userr,
-        });
-
-        history.push("/");
-      })
-      .catch((e) => alert(e.messsage));
-  };
-
-  const loginWithEmail = (e) => {
-    e.preventDefault();
-    auth
-      .signInWithEmailAndPassword(email, password)
+      .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
-        console.log(auth);
-        dipatch({
-          type: "SET_USER",
-          user: auth.user,
-        });
+        //create a user and login... redirect to home page
         history.push("/");
       })
       .catch((e) => alert(e.messsage));
-  };
-
-  const register = (e) => {
-    history.push("/signup");
   };
 
   return (
@@ -65,16 +32,16 @@ function Login() {
       </Link>
 
       <div className="login_container">
-        <h1>Sign In</h1>
+        <h1>Sign Up</h1>
 
         <form action="">
-          <h5>Email</h5>
+          <h5>Set Email</h5>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <h5>Password</h5>
+          <h5>Set Password</h5>
           <input
             type="password"
             value={password}
@@ -83,12 +50,9 @@ function Login() {
           <button
             type="submit"
             className="login_signinButton"
-            onClick={loginWithEmail}
+            onClick={signupWithEmail}
           >
-            Sign In
-          </button>
-          <button type="submit" className="login_signinButton" onClick={login}>
-            Login With Google
+            Sign Up To Amazon
           </button>
         </form>
         <p>
@@ -97,12 +61,9 @@ function Login() {
           with this Privacy Notice, as may be amended from time to time by us at
           our discretion.
         </p>
-        <button className="login_registerButton" onClick={register}>
-          Create Your Amazon Account
-        </button>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Signup;

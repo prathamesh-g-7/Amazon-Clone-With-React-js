@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Home.css";
 import Product from "./Product";
 
@@ -15,13 +15,13 @@ function Home() {
           id="1"
           title="The Lean startup: How constant innovation creates radically successful bussiness paperback"
           price={11.96}
-          rating={5}
+          rating={4}
           image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_B01,204,203,200_.jpg"
         />
         <Product
           id="2"
-          title="The Lean startup: How constant innovation creates radically successful bussiness paperback"
-          price={11.96}
+          title="Savya home Apollo high Back Office Chair with Adjustable arms and anyposition tilt Locking Mechanism (Black, Adj Arm)"
+          price={80.53}
           rating={5}
           image="https://images-na.ssl-images-amazon.com/images/I/61xTHyNnDYL._SL1001_.jpg"
         />
@@ -30,23 +30,23 @@ function Home() {
       <div className="home_row">
         <Product
           id="3"
-          title="The Lean startup: How constant innovation creates radically successful bussiness paperback"
-          price={11.96}
-          rating={5}
+          title="yestha U8 Wrist Watch Bluetooth Smartwatch Compatible with All Mobile Phones for Boys & Girls"
+          price={39.99}
+          rating={3}
           image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
         />
         <Product
           id="4"
-          title="The Lean startup: How constant innovation creates radically successful bussiness paperback"
-          price={11.96}
-          rating={5}
+          title="Echo Dot (3rd Gen) - #1 smart speaker brand in India with Alexa (Black)"
+          price={42.99}
+          rating={4}
           image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?%24300x400_retinamobilex2%24"
         />
         <Product
           id="5"
-          title="The Lean startup: How constant innovation creates radically successful bussiness paperback"
-          price={11.96}
-          rating={5}
+          title="HP Envy 11th Gen Core i7 Processor 13.3-inch (33.78 cms) FHD Touchscreen Laptop (16GB/1TB SSD/Win 10/NVIDIA MX450 2GB/Natural Silver/1.3 kg), 13-ba1018TX"
+          price={1342.24}
+          rating={4}
           image="https://images-na.ssl-images-amazon.com/images/I/61gG61YpwoL._SL1280_.jpg"
         />
       </div>
@@ -54,8 +54,8 @@ function Home() {
       <div className="home_row">
         <Product
           id="6"
-          title="The Lean startup: How constant innovation creates radically successful bussiness paperback"
-          price={11.96}
+          title="LG UltraWide 29 Inch WFHD (2560 x 1080) IPS Display - HDR 10, AMD Free sync, Inbuilt 5W Speaker, sRGB 99%, Multi Tasking Monitor - 29WL50S"
+          price={255.55}
           rating={5}
           image="https://images-na.ssl-images-amazon.com/images/I/71xMxbdxrsL._SL1500_.jpg"
         />

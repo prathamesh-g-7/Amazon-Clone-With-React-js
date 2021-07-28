@@ -101,9 +101,9 @@
   border: none;
 }
 
-.header_link:hover {
+/* .header_link:hover {
   border: 1px solid;
-}
+} */
 
 .header_option {
   display: flex;
